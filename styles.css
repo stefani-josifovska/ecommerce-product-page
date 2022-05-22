@@ -45,7 +45,7 @@ header {
   margin: 0 4%;
   padding: 0;
   height: 5em;
-  border-bottom: 0;
+  border-bottom: 2px solid white;
 }
 
 h3 {
