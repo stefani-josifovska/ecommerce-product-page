@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>E-commerce product page</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="hamburger-logo">
+      <img src="images/icon-menu.svg" alt="" id="hamburger-button">
+      <div class="navbar">
+        <img src="images/icon-close.svg" alt="" id="icon-close">
+        <ul>
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <img src="images/logo.svg" alt="">
+      <div class="horizontal-menu">
+        <div class="hor-menu-el" id="collections">Collections</div>
+        <div class="hor-menu-el" id="men">Men</div>
+        <div class="hor-menu-el" id="women">Women</div>
+        <div class="hor-menu-el" id="about">About</div>
+        <div class="hor-menu-el" id="contact">Contact</div>
+      </div>
+    </div>
+
+    <div class="cart-avatar">
+      <div class="cart">
+        <div class="cart-count"></div>
+        <img src="images/icon-cart.svg" alt="">
+      </div>
+
+      <div class="avatar">
+        <img src="images/image-avatar.png" alt="" id='avatar-img'>
+      </div>
+    </div>
+  </header>
+
+  <div class="cart-status">
+    <h5>Cart</h5>
+    <div class="cart-empty">
+      <p>Your cart is empty.</p>
+    </div>
+    <div class="cart-full hidden">
+      <div class="cart-full-content">
+        <img src="images/image-product-1.jpg" alt="">
+        <div class="text-cart-full">
+          <p>Autumn Limited Edition...</p>
+          <p>$125 x <span id='cart-qty'> </span> <span id='total-price'></span></p>
+        </div>
+        <img src="images/icon-delete.svg" alt="">
+      </div>
+      <button>Checkout</button>
+    </div>
+  </div>
+
+  <section class='container'>
+
+    <div class="photo-gallery">
+      <img src="images/icon-next.svg" alt="" class="arrow" id="left">
+      <img src="images/image-product-1.jpg" alt="" id="photo-display">
+      <img src="images/icon-next.svg" alt="" class="arrow" id="right">
+      <div class="other-photos">
+        <img class="gallery-img selected-img" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="gallery-img" src="images/image-product-2-thumbnail.jpg" alt="">
+        <img class="gallery-img" src="images/image-product-3-thumbnail.jpg" alt="">
+        <img class="gallery-img" src="images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+
+    <section class='main-content'>
+
+      <h3>SNEAKER COMPANY</h3>
+
+      <h1>Fall Limited Edition Sneakers</h1>
+
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="prices">
+        <div class="prices-left">
+          <h2 id='price'>$125.00</h2>
+          <h4>50%</h4>
+        </div>
+        <h4 id='old-price'>$250.00</h4>
+      </div>
+
+
+
+      <div class="add-cart">
+
+        <div class="qty">
+          <img src="images/icon-minus.svg" alt="" id="icon-minus">
+          <h5>1</h5>
+          <img src="images/icon-plus.svg" alt="" id="icon-plus">
+        </div>
+
+        <button><img src="images/icon-cart.svg" alt="">Add to cart</button>
+
+      </div>
+    </section>
+  </section>
+
+  <div class="carousel hidden">
+    <img src="images/icon-close.svg" alt="" id="carousel-close">
+    <img src="images/icon-next.svg" alt="" class="arrow left-car" id="left">
+    <img src="images/image-product-1.jpg" alt="" id="photo-display-carousel">
+    <img src="images/icon-next.svg" alt="" class="arrow right-car" id="right">
+    <div class="other-photos">
+      <img class="gallery-img selected-img img-car" src="images/image-product-1-thumbnail.jpg" alt="">
+      <img class="gallery-img img-car" src="images/image-product-2-thumbnail.jpg" alt="">
+      <img class="gallery-img img-car" src="images/image-product-3-thumbnail.jpg" alt="">
+      <img class="gallery-img img-car" src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
