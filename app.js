@@ -156,6 +156,8 @@ const photoDispCar = document.querySelector('#photo-display-carousel');
 const photoGalCar = document.querySelectorAll('.img-car');
 
 dispPhoto.addEventListener('click', () => {
+  let winSize = window.matchMedia("(min-width: 650px)");
+  if (winSize.matches) {
   carousel.classList.remove('hidden');
   let j = [].findIndex.call(photosGallery, function(photo) {
     return photo.classList.contains('selected-img');
@@ -163,7 +165,7 @@ dispPhoto.addEventListener('click', () => {
   photoDispCar.src = 'images/image-product-' + (j+1) + '.jpg';
   let allButCarousel = document.querySelectorAll('body > *:not(.carousel)');
   for (let i = 0; i < allButCarousel.length; i++) { allButCarousel[i].classList.add('unclickable'); }
-});
+  }});
 
 exitCarosel.addEventListener('click', () => {
   carousel.classList.add('hidden');
