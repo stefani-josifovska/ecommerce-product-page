@@ -478,7 +478,10 @@ button:hover {
 
   .carousel {
     position: absolute;
-    width: 500px;
+    width: 40vw;
+    height: 40vh;
+    max-width: 400px;
+    max-height: 400px;
     z-index: 101;
     top: 50%;
     left: 50%;
