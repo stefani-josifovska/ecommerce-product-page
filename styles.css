@@ -448,6 +448,7 @@ button:hover {
 
   body {
     margin: 0;
+    margin-bottom: 2em;
   }
 
   h1 {
