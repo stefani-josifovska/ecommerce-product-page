@@ -296,12 +296,12 @@ button:hover {
   width: 100%;
 }
 
-#left {
+.left {
   transform: rotate(180deg);
   left: 2%;
 }
 
-#right {
+.right {
   right: 2%;
 }
 
@@ -496,11 +496,11 @@ button:hover {
     border-radius: 15px;
   }
 
-  .carousel #left {
+  .carousel .left {
     left: -4%;
   }
 
-  .carousel #right {
+  .carousel .right {
     right: -4%;
   }
 
