@@ -101,8 +101,8 @@ const storeLocally = function(storeNumber) {
 }
 
 let dispPhoto = document.querySelector('#photo-display');
-const leftBtn = document.querySelector('#left');
-const rightBtn = document.querySelector('#right');
+const leftBtn = document.querySelector('.left');
+const rightBtn = document.querySelector('.right');
 
 let i = 0;
 leftBtn.addEventListener('click', () => {
